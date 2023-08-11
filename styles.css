@@ -1,0 +1,89 @@
+body {
+    font-family: 'Bacasime Antique', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-image:url(/Images/ref28image.webp);
+  padding: 80px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 50px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 100px;
+    
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a:hover {
+
+   border-bottom: 10px solid hotpink;
+   border-radius: 50%;
+}
+
+a:any-link {
+    color: white;
+    text-decoration: none;
+}
+
+
+   main {
+    display:flex;
+    justify-content: space-evenly;
+
+  }
+
+.story {
+    /* display:flex; */
+    width: 350px;
+    height: 350px;
+    border: solid;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.story::-webkit-scrollbar {
+    
+    width: 20px;
+}
+         
+.story::-webkit-scrollbar-track {
+    background-color: transparent;
+}               
+
+.story::-webkit-scrollbar-thumb {
+
+    border-radius: 80%;
+    width: 20px;
+    height: 20px;
+    background-color: hotpink;
+    display: inline-block;
+}
+
+.story img {
+    height: 150px;
+    object-fit:scale-down;
+}
+
+
