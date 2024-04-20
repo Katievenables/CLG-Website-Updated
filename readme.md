@@ -32,3 +32,5 @@ The color scheme and design elements aim for a visually appealing and user-frien
 ![image](https://github.com/Katievenables/CLG-Week-6-and7/assets/129230024/e0a4e73c-c7b3-4946-8a8d-0481e65dfe9f)
 
 # Website Link Using Netlify
+
+https://nettlemag.netlify.app/
