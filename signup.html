@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nettle</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <h1><a href="/index.html">Nettle</a></h1>
+    <nav>
+      <ul id="navbar">
+        <li><a href="/fashion.html">Fashion</a></li>
+        <li><a href="/beauty.html">Beauty</a></li>
+        <li><a href="/lifestyle.html">Lifestyle</a></li>
+        <li><a href="/signup.html">Sign Up </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <div class="form-container">
+      <form>
+        <h2 class="newsletter">Sign up to our newsletter!</h2>
+        <input type="text" name="name" placeholder="Full Name" />
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Email Address*"
+        />
+        <p>How often would you like our newsletter?</p>
+        <div class="radio-button">
+          <input type="radio" name="frequency" id="daily" value="Daily" />
+          <label for="daily">Daily</label>
+          <input type="radio" name="frequency" id="weekly" value="weekly" />
+          <label for="weekly">Weekly</label>
+        </div>
+        <label for="read"> What stories do you enjoy to read? </label>
+        <textarea id="read"> </textarea>
+
+        <div class="t-and-c-container">
+          <input
+            type="checkbox"
+            name="terms"
+            id="terms"
+            value="Terms and Conditions"
+          />
+          <label for="terms"> I agree to the terms and conditions!</label>
+        </div>
+        <input type="submit" value="Sign Up here!" />
+      </form>
+    </div>
+    <footer>Copyright &#169; KTV2024</footer>
+  </body>
+</html>

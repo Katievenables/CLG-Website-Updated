@@ -1,112 +1,194 @@
 body {
-    font-family: 'Bacasime Antique', serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-    padding: 0;
-    margin: 0;
+  font-family: "Bacasime Antique", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #5efda0;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
-  background-image:url(/Images/ref28image.webp); object-fit:contain; width: 100%;
-  padding: 80px;
-  margin-bottom: 10px;
+  justify-content: space-around;
+  background-image: url(/Images/ref28image.webp);
+  background-size: cover;
+  object-fit: contain;
+  width: 100%;
+  padding-bottom: 2%;
+  margin-bottom: 20px;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
-    display: flex;
-    gap: 100px;
-    
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-    display: block;
+  display: block;
+  margin-bottom: 10px;
 }
 
 nav ul li a:hover {
-
-   border-bottom: 10px solid hotpink;
-   border-radius: 50%;
+  border-bottom: 5px solid hotpink;
+  border-radius: 50%;
 }
 
 a:any-link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-   main {
-    display:flex;
-    justify-content: space-evenly;
-
-  }
+main {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 220px;
+  margin-right: 220px;
+}
 
 .story {
-    /* display:flex; */
-    width: 350px;
-    height: 350px;
-    border: solid;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  border: solid;
+  border-color: #1e1b36;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 20px;
+  background-color: #faf3ef;
 }
 
 .story::-webkit-scrollbar {
-    
-    width: 20px;
-}
-         
-.story::-webkit-scrollbar-track {
-    background-color: transparent;
-}               
-
-.story::-webkit-scrollbar-thumb {
-
-    border-radius: 80%;
-    width: 20px;
-    height: 20px;
-    background-color: hotpink;
-    display: inline-block;
+  width: 0px;
 }
 
 .story img {
-    height: 150px;
-    object-fit:scale-down;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 20px;
 }
 
-@media all and (max-device-width: 720px) {
-    header {
-        width: 100%;
-        display: block;
-    }
+.story p {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
 
-    nav ul {
-        max-width: 100%;
-        display: block;
-    }
+.author em {
+  text-align: right;
+  display: block;
+}
 
-    h1 {
-        text-align: center;
-        margin: auto;
-    }
+.story h2 {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
 
-    nav {
-        max-width: 100%;
-    }
-    
-    body {max-width: 100%;
-         height: 100%; }
+.story article {
+  width: 100%;
+}
 
-    .story {
-        font-size: 10px;
-    }
+@media all and (max-width: 720px) {
+  header {
+    padding: 20px;
+    font-size: 30px;
+    background-size: cover;
+  }
 
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li {
+    margin-bottom: 5px;
+  }
+
+  .story {
+    font-size: 10px;
+    margin: auto;
+  }
+
+  @media all and (max-width: 720px) {
+    input[type="radio"],
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: solid;
+  background-color: pink;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  margin-bottom: 25px;
+}
+
+label {
+  display: inline-block;
+  margin-right: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+}
+
+.radio-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.t-and-c-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
 }
